@@ -190,7 +190,7 @@ const solvable = (arr) => {
     for (let x = 0; x<arr.length; x++) {
 
         for (let y = x+1; y<arr.length; y++) {
-            if((arr[x] && arr[y]) && [x] > arr[y]) inversions++;
+            if((arr[x] && arr[y]) && arr[x] > arr[y]) inversions++;
         }
     }
 
@@ -199,7 +199,7 @@ const solvable = (arr) => {
 
 
 const correct = (result, content) => {
-    if(JSON.stringify(result) == JSON.stringify(content)) return true;
+    if(JSON.stringify(result) === JSON.stringify(content)) return true;
     return false;
 }
 
