@@ -9,6 +9,10 @@ body {
     text-align: center;
     flex-direction: column;
     padding-top: 2%;
+    
+    // adjusted    
+    height: 100vh;
+    margin: 0
 }
 #grid {
     width: 500px;
