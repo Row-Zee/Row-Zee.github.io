@@ -45,7 +45,7 @@ const removeDroppable = (items) => {
 const dragendHandler = event => {
   console.log("dragEnd");
 
-  event.dataTransfer.clearData();
+
 
   removeDroppable(document.querySelectorAll('li'));
 
